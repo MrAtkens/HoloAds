@@ -1,11 +1,14 @@
-import React from "react";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
+import React, {useEffect, useState} from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
+import {useTransform, useViewportScroll} from "framer-motion";
+
+import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import { SectionDescription } from "components/misc/Typography";
 import { ReactComponent as SvgDotPatternIcon } from "images/dot-pattern.svg";
+
 
 const HeadingContainer = tw.div`text-center`;
 const Subheading = tw(SubheadingBase)`mb-4`;
@@ -60,22 +63,16 @@ const DecoratorBlob1 = tw(SvgDotPatternIcon)`absolute bottom-0 left-0 w-32 h-32 
 const DecoratorBlob2 = tw(SvgDotPatternIcon)`absolute top-0 right-0 w-32 h-32 mt-16 mr-6 transform translate-x-1/2 -translate-y-1/2 fill-current text-gray-500 opacity-50`
 
 export default ({
-  subheading = "",
-  heading = "We love writing.",
-  description = "",
+  subheading = "Галерея",
+  heading = "Мы любим",
+  description = "Здесь вы можете найти фотографий от наших клиентов",
   posts = [
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1563784462041-5f97ac9523dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-      authorImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      title: "Enjoying the beach life while on a vacation",
-      description:
-        "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-      authorName: "Adam Cuppy",
-      authorProfile: "Vlogger",
-      url: "https://reddit.com",
-      featured: true
+          "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+      title: "Getting the most out of your vacation",
+      authorName: "Aaron Patterson",
+      url: "https://reddit.com"
     },
     {
       postImageSrc:
@@ -107,13 +104,22 @@ export default ({
     }
   ]
 }) => {
+  const [color, setColor] = useState("#6415ff")
+  const { scrollYProgress  } = useViewportScroll();
+  const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+      ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
+  useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
+
   return (
     <Container>
       <ContentWithPaddingXl>
         <HeadingContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
-          {heading && <Heading>{heading}</Heading>}
-          {description && <Description>{description}</Description>}
+          <Subheading style={{color: color}}>{subheading}</Subheading>
+          <Heading>
+            {heading}
+            <span style={{color: color}}>  Фотографий</span>
+          </Heading>
+          <Description>{description}</Description>
         </HeadingContainer>
         <Posts>
           {posts.map((post, index) => (

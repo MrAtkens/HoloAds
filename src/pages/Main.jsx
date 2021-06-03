@@ -4,9 +4,7 @@ import ScrollToTop from 'react-scroll-up';
 
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Features from "components/features/ThreeColSimple.js";
-import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-import TabGrid from "components/cards/TabCardGrid.js";
 import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
@@ -17,7 +15,10 @@ import SEO from "components/Seo"
 import chefIconImageSrc from "images/chef-icon.svg";
 import celebrationIconImageSrc from "images/celebration-icon.svg";
 import shopIconImageSrc from "images/shop-icon.svg";
-import FAQ from "../components/faqs/SingleCol";
+import FAQ from "components/faqs/SingleCol";
+import Blog from "components/blogs/GridWithFeaturedPost";
+
+const HighlightedText = tw.span`text-primary-500`
 
 export default () => {
     const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
@@ -39,17 +40,6 @@ export default () => {
             </ScrollToTop>
             <AnimationRevealPage>
                 <Hero/>
-                <MainFeature
-                    buttonRounded={false}
-                    textOnLeft={false}
-                    primaryButtonText="Купить"
-                    imageSrc={
-                        "https://images.unsplash.com/photo-1460306855393-0410f61241c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
-                    }
-                    imageCss={imageCss}
-                    imageDecoratorBlob={true}
-                    imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-                />
                 <Features
                     cards={[
                         {
@@ -99,6 +89,7 @@ export default () => {
                     imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
                     textOnLeft={true}
                 />
+                <Blog/>
                 <FAQ
                     description="Здесь вы можете прочитать самые частые запросы"
                     faqs={[
