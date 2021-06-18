@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import AnimationRevealPage from "helpers/AnimationRevealContact";
+import { AnimationRevealPageNoPadding } from "helpers/AnimationRevealPage";
 import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
@@ -32,7 +32,7 @@ export default () => {
               >
                   <ContentLoader/>
               </ScrollToTop>
-            <AnimationRevealPage>
+            <AnimationRevealPageNoPadding>
               <Header color={color} className={"header-contact"}/>
               <ContactDetails
                 heading={"Наши контакты"}
@@ -79,7 +79,7 @@ export default () => {
               </Container>
               <ContactUsForm color={color} />
               <Footer />
-            </AnimationRevealPage>
+            </AnimationRevealPageNoPadding>
           </>
       );
 };

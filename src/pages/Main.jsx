@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import ScrollToTop from 'react-scroll-up';
 
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import { AnimationRevealPage } from "helpers/AnimationRevealPage.js";
 import Features from "components/features/ThreeColSimple.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
@@ -18,11 +18,11 @@ import shopIconImageSrc from "images/shop-icon.svg";
 import FAQ from "components/faqs/SingleCol";
 import Blog from "components/blogs/GridWithFeaturedPost";
 
-const HighlightedText = tw.span`text-primary-500`
+const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
+const imageCss = tw`rounded-4xl`;
 
 export default () => {
-    const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
-    const imageCss = tw`rounded-4xl`;
+
 
     return (
         <>

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
@@ -54,65 +53,65 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 `;
 
 export default ({
-  cards = [
-    {
-      imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security.",
-      url: "https://timerse.com"
-    },
-    {
-      imageSrc: SupportIconImage,
-      title: "24/7 Support",
-      description: "Lorem ipsum donor amet siti ceali placeholder text",
-      url: "https://google.com"
-    },
-    {
-      imageSrc: CustomizeIconImage,
-      title: "Customizable",
-      description: "Lorem ipsum donor amet siti ceali placeholder text",
-      url: "https://reddit.com"
-    }
-  ],
-  linkText = "Подробнее",
-  heading = "",
-  subheading = "",
-  description = "",
-  imageContainerCss = null,
-  imageCss = null
-}) => {
-  const [color, setColor] = useState("#6415ff")
-  const { scrollYProgress  } = useViewportScroll();
-  const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-      ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
-  useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
-  return (
-    <Container>
-      <ContentWithPaddingXl>
-        {subheading && <Subheading>{subheading}</Subheading>}
-        <Heading>Кому могут понадобиться <HighlightedText style={{backgroundColor: color}}>Голограммы.</HighlightedText></Heading>
-        {description && <Description>{description}</Description>}
-        <ThreeColumnContainer>
-          {cards.map((card, i) => (
-            <Column key={i}>
-              <Card href={card.url}>
+                    cards = [
+                        {
+                            imageSrc: ShieldIconImage,
+                            title: "Secure",
+                            description: "We strictly only deal with vendors that provide top notch security.",
+                            url: "https://timerse.com"
+                        },
+                        {
+                            imageSrc: SupportIconImage,
+                            title: "24/7 Support",
+                            description: "Lorem ipsum donor amet siti ceali placeholder text",
+                            url: "https://google.com"
+                        },
+                        {
+                            imageSrc: CustomizeIconImage,
+                            title: "Customizable",
+                            description: "Lorem ipsum donor amet siti ceali placeholder text",
+                            url: "https://reddit.com"
+                        }
+                    ],
+                    linkText = "Подробнее",
+                    heading = "",
+                    subheading = "",
+                    description = "",
+                    imageContainerCss = null,
+                    imageCss = null
+                }) => {
+    const [color, setColor] = useState("#6415ff")
+    const { scrollYProgress  } = useViewportScroll();
+    const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+        ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
+    useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
+    return (
+        <Container>
+            <ContentWithPaddingXl>
+                {subheading && <Subheading>{subheading}</Subheading>}
+                <Heading>Кому могут понадобиться <HighlightedText style={{backgroundColor: color}}>Голограммы.</HighlightedText></Heading>
+                {description && <Description>{description}</Description>}
+                <ThreeColumnContainer>
+                    {cards.map((card, i) => (
+                        <Column key={i}>
+                            <Card href={card.url}>
                 <span className="imageContainer" css={imageContainerCss}>
                   <img src={card.imageSrc} alt="" css={imageCss} />
                 </span>
-                <span className="title">{card.title}</span>
-                <p className="description">{card.description}</p>
-                {linkText && (
-                  <span className="link">
+                                <span className="title">{card.title}</span>
+                                <p className="description">{card.description}</p>
+                                {linkText && (
+                                    <span className="link">
                     <span style={{color: color}}>{linkText}</span>
                     <ArrowRightIcon style={{color: color}} className="icon" />
                   </span>
-                )}
-              </Card>
-            </Column>
-          ))}
-        </ThreeColumnContainer>
-      </ContentWithPaddingXl>
-      <DecoratorBlob />
-    </Container>
-  );
+                                )}
+                            </Card>
+                        </Column>
+                    ))}
+                </ThreeColumnContainer>
+            </ContentWithPaddingXl>
+            <DecoratorBlob />
+        </Container>
+    );
 };
