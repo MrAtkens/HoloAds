@@ -100,7 +100,7 @@ export default () => {
                 <Link href="#">Почта: r.kaliaskar@mail.ru</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Адресс: </Link>
+                <Link href="#">Адресс: Сакен Сейфулинна 40</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Связаться с нами</Link>
@@ -112,9 +112,9 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>Holo Ads.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. Все права сохранены.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2018 Holo Ads. Все права сохранены.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <InstagramIcon />

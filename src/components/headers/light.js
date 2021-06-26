@@ -4,8 +4,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
-import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
-import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+import { Menu, X } from "react-feather";
 import logo from "../../images/logo.svg";
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
@@ -109,7 +108,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
             {links}
           </MobileNavLinks>
           <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-            {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
+            {showNavLinks ? <X tw="w-6 h-6" /> : <Menu tw="w-6 h-6" />}
           </NavToggle>
         </MobileNavLinksContainer>
       </Header>

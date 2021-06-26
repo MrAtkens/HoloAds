@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from "react";
-import {motion, useTransform, useViewportScroll} from "framer-motion";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { ChevronDown } from "react-feather";
+
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 
@@ -64,14 +65,9 @@ export default ({
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
-  ]
+  ], color
 }) => {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
-  const [color, setColor] = useState("#6415ff")
-  const { scrollYProgress  } = useViewportScroll();
-  const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-      ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
-  useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
   const toggleQuestion = questionIndex => {
     if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
     else setActiveQuestionIndex(questionIndex);
@@ -106,7 +102,7 @@ export default ({
                     animate={activeQuestionIndex === index ? "open" : "collapsed"}
                     transition={{ duration: 0.02, ease: [0.04, 0.62, 0.23, 0.98] }}
                   >
-                    <ChevronDownIcon />
+                    <ChevronDown />
                   </QuestionToggleIcon>
                 </Question>
                 <Answer

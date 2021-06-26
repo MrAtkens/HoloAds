@@ -1,7 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro";
+import styled, { css } from "styled-components";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import {SectionDescription} from "components/misc/Typography";

@@ -11,138 +11,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7653c574-222b-4341-afbe-237ced319ac0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/porgs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hero/Effects.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hero/porgs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/porgs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serviceWorkerRegistration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/features/TwoColWithTwoHorizontalFeaturesAndButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/prototype-illustration.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-overrides.js" beforeDir="false" afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/_redirects" beforeDir="false" afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/react-landing-pages-and-components-free-tailwindcss-twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/react-landing-pages-and-components-free-tailwindcss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/porgs.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blogs/PopularAndRecentBlogPosts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blogs/ThreeColSimpleWithImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blogs/ThreeColSimpleWithImageAndDashedBorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/PortfolioTwoCardsWithImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/TabCardGrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/ThreeColContactDetails.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/ThreeColSlider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/TwoTrendingPreviewCardsWithImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cta/DownloadApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cta/DownloadApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cta/GetStarted.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cta/GetStartedLight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/faqs/SimpleWithSideImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentLoader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blogs/GridWithFeaturedPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blogs/GridWithFeaturedPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cards/ProfileThreeColGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/ProfileThreeColGrid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/faqs/SingleCol.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/faqs/SingleCol.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/faqs/TwoColumnPrimaryBackground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/DashedBorderSixFeatures.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/ThreeColCenteredStatsPrimaryBackground.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/features/ThreeColSimple.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/ThreeColSimple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/ThreeColWithSideImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/ThreeColWithSideImageWithPrimaryBackground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/TwoColSingleFeatureWithStats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/TwoColWithSteps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/TwoColWithTwoFeaturesAndButtons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/TwoColWithTwoHorizontalFeaturesAndButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/VerticalWithAlternateImageAndText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footers/FiveColumnDark.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footers/FiveColumnWithBackground.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/features/TwoColSingleFeatureWithStats2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/TwoColSingleFeatureWithStats2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footers/FiveColumnWithInputForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footers/FiveColumnWithInputForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footers/MiniCenteredFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footers/SimpleFiveColumn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/SimpleContactUs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/SimpleSubscribeNewsletter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/TwoColContactUsWithIllustrationFullForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/headers/light.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/headers/light.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hero/BackgroundAsImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/BackgroundAsImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/BackgroundAsImageWithCenteredContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/FullWidthWithImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/TwoColumnWithFeaturesAndTestimonial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/TwoColumnWithInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/TwoColumnWithPrimaryBackground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero/TwoColumnWithVideo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/misc/Links.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/ThreePlans.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/ThreePlansWithHalfPrimaryBackground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/TwoPlansWithDurationSwitcher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testimonials/SimplePrimaryBackground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testimonials/ThreeColumnWithProfileImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/testimonials/ThreeColumnWithProfileImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testimonials/TwoColumnWithImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testimonials/TwoColumnWithImageAndProfilePictureReview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testimonials/TwoColumnWithImageAndRating.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/AgencyLandingPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/EventLandingPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/HostingCloudLandingPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/HotelTravelLandingPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/SaaSProductLandingPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demos/ServiceLandingPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/AnimationRevealContact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/AnimationRevealPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/AnimationRevealPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/ReactModalAdapter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/useDimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/arrow-left-2-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/arrow-left-3-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/arrow-right-2-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/arrow-right-3-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/checkbox-circle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/contact-us-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/customer-support-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/customers-logo-strip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/design-illustration-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/design-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/email-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/email-newsletter-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/fast-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/girl-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/google-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/handle-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/happy-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero-screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero-screenshot-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/login-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo-full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/love-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/professional-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/prototype-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/quotes-l.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/quotes-r.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/reliable-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/server-illustration-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/server-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/server-redundancy-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/server-secure-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/signup-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/star-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg-decorator-blob-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg-decorator-blob-10.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg-decorator-blob-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg-decorator-blob-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg-decorator-blob-5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg-decorator-blob-6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/team-illustration-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/team-illustration.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/twitter-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/youtube-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero/porgs.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/porgs.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/misc/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/misc/Buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/ResponsiveVideoEmbed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/porgs.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/ContactUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContactUs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Pricing.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PrivacyPolicy.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TermsOfService.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +55,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -173,24 +71,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/3dBackground" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\WEB\Holograms\src\components\features" />
+      <recent name="G:\WEB\Holograms\my-app\public\static" />
+      <recent name="G:\WEB\Holograms\my-app" />
+      <recent name="G:\WEB\Holograms\my-app\pages" />
+      <recent name="G:\WEB\Holograms\src\components\hero" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\WEB\Holograms\src\images" />
+      <recent name="G:\WEB\Holograms\my-app\public" />
+      <recent name="G:\WEB\Holograms\my-app" />
       <recent name="G:\WEB\Holograms\src\components\3dBackground" />
       <recent name="G:\WEB\Holograms\public" />
-      <recent name="G:\WEB\Holograms\src" />
-      <recent name="G:\WEB\Holograms" />
-      <recent name="G:\WEB\Holograms\src\layouts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\WEB\Holograms\src\components\hero" />
-      <recent name="G:\WEB\Holograms\src\images" />
-      <recent name="G:\WEB\Holograms\public" />
-      <recent name="G:\WEB\Holograms\src\components\headers" />
-      <recent name="G:\WEB\Holograms\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -205,11 +103,33 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="npm" />
@@ -230,8 +150,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -264,6 +186,19 @@
       <workItem from="1623922139441" duration="141000" />
       <workItem from="1623928447969" duration="11569000" />
       <workItem from="1624038746798" duration="416000" />
+      <workItem from="1624204839247" duration="97000" />
+      <workItem from="1624206175481" duration="3442000" />
+      <workItem from="1624265765810" duration="691000" />
+      <workItem from="1624266539944" duration="15652000" />
+      <workItem from="1624379326296" duration="11021000" />
+      <workItem from="1624440118641" duration="824000" />
+      <workItem from="1624452700656" duration="595000" />
+      <workItem from="1624498676789" duration="384000" />
+      <workItem from="1624499146695" duration="2471000" />
+      <workItem from="1624538587774" duration="1183000" />
+      <workItem from="1624606393064" duration="655000" />
+      <workItem from="1624611620534" duration="644000" />
+      <workItem from="1624723085883" duration="6830000" />
     </task>
     <servers />
   </component>
@@ -287,30 +222,30 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="715" y="362" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034@0.46.1920.1034" timestamp="1620736497677" />
-    <state x="689" y="309" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623669147379">
+    <state x="689" y="309" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1624740878238">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="689" y="309" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1623669147379" />
-    <state x="739" y="317" key="FileChooserDialogImpl" timestamp="1621014914493">
+    <state x="689" y="309" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1624740878238" />
+    <state x="739" y="317" key="FileChooserDialogImpl" timestamp="1624383691079">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="739" y="317" key="FileChooserDialogImpl/0.46.1920.1034@0.46.1920.1034" timestamp="1621014914493" />
-    <state width="1897" height="344" key="GridCell.Tab.0.bottom" timestamp="1623960800582">
+    <state x="739" y="317" key="FileChooserDialogImpl/0.46.1920.1034@0.46.1920.1034" timestamp="1624383691079" />
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom" timestamp="1624739746833">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1897" height="344" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1623960800582" />
-    <state width="1897" height="344" key="GridCell.Tab.0.center" timestamp="1623960800582">
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1624739746833" />
+    <state width="1897" height="279" key="GridCell.Tab.0.center" timestamp="1624739746833">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1897" height="344" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1623960800582" />
-    <state width="1897" height="344" key="GridCell.Tab.0.left" timestamp="1623960800544">
+    <state width="1897" height="279" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1624739746833" />
+    <state width="1897" height="279" key="GridCell.Tab.0.left" timestamp="1624739746832">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1897" height="344" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1623960800544" />
-    <state width="1897" height="344" key="GridCell.Tab.0.right" timestamp="1623960800582">
+    <state width="1897" height="279" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1624739746832" />
+    <state width="1897" height="279" key="GridCell.Tab.0.right" timestamp="1624739746833">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1897" height="344" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1623960800582" />
+    <state width="1897" height="279" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1624739746833" />
     <state width="1897" height="344" key="GridCell.Tab.1.bottom" timestamp="1623960800582">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
@@ -359,13 +294,13 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state width="1897" height="344" key="GridCell.Tab.3.right/0.46.1920.1034@0.46.1920.1034" timestamp="1623960800583" />
-    <state x="616" y="262" key="run.anything.popup" timestamp="1620842819714">
+    <state x="616" y="262" key="run.anything.popup" timestamp="1624380573442">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="616" y="262" key="run.anything.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1620842819714" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1620738886310">
+    <state x="616" y="262" key="run.anything.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1624380573442" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1624384232714">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1620738886310" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.46.1920.1034@0.46.1920.1034" timestamp="1624384232714" />
   </component>
 </project>

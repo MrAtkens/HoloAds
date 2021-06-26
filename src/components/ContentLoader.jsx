@@ -40,7 +40,7 @@ export const ContentLoader = () => {
     useEffect(() =>{
         yRange.onChange((v) => setIsComplete(v >= 1))
         yRangeColor.onChange((v) => setColor(v))
-    }, [yRange]);
+    }, [yRange, yRangeColor]);
     return (
         <ScrollUpButtonWrapper style={{backgroundColor: color}}>
             <svg className="progress-icon" viewBox="0 0 50 50">

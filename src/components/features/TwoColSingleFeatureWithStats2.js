@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import StatsIllustrationSrc from "images/stats-illustration.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-import {useTransform, useViewportScroll} from "framer-motion";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -53,13 +52,9 @@ export default ({
   imageDecoratorBlobCss = null,
   imageInsideDiv = true,
   statistics = null,
-  textOnLeft = false
+  textOnLeft = false,
+  color
 }) => {
-  const [color, setColor] = useState("#6415ff")
-  const { scrollYProgress  } = useViewportScroll();
-  const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-      ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
-  useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
 
   const defaultStatistics = [
     {

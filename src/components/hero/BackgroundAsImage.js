@@ -5,13 +5,12 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 import Header, { NavLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
-import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 import image from "./porgs.jpg";
 import Effects from "./Effects";
 
 const StyledHeader = styled(Header)`
-  ${tw`pt-8 max-w-none`}
+  ${tw`pt-8 max-w-none w-full`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
@@ -19,44 +18,24 @@ const StyledHeader = styled(Header)`
     ${tw`text-gray-100 hover:text-primary-500`}
   }
 `;
+
 const Container = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
+  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
 `;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0`;
 
-const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
-const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
-const LeftColumn = tw.div`flex flex-col items-center lg:block`;
-const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
+const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
+const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-none`}
+  ${tw`text-3xl text-center sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-snug -mt-24 sm:mt-0`}
   span {
     ${tw`inline-block mt-2`}
   }
 `;
 
-const SlantedBackground = styled.span`
-  ${tw`relative text-primary-500 text-2xl px-4 -mx-4 py-2`}
-  &::before {
-    content: "";
-    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
-  }
-`;
-
-const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
-
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
-
-const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
-  padding-bottom: 56.25% !important;
-  padding-top: 0px !important;
-  ${tw`rounded`}
-  iframe {
-    ${tw`rounded bg-black shadow-xl`}
-  }
-`;
+const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 
 const rpi = () => Math.random() * Math.PI
@@ -82,7 +61,7 @@ const Thing = React.forwardRef(({ amount = 100, opacity, ...props }, ref) => {
   )
 })
 
-function Porg() {
+function Yoda() {
   const plane = useRef()
   const eyes = useRef()
   const thing = useRef()
@@ -90,7 +69,7 @@ function Porg() {
   const texture = useLoader(THREE.TextureLoader, image)
   useMemo(() => (texture.minFilter = THREE.LinearFilter), [])
   const adaptedHeight = 3800 * (aspect > 5000 / 3800 ? viewport.width / 5000 : viewport.height / 3800)
-  const adaptedWidth = 5000 * (aspect > 5000 / 3800 ? viewport.width / 5000 : viewport.height / 3800)
+  const adaptedWidth = 8000 * (aspect > 5000 / 3800 ? viewport.width / 5000 : viewport.height / 3800)
   const scale = adaptedWidth / 25
   useFrame((state) => {
     plane.current.rotation.x = Math.sin(state.clock.getElapsedTime()) / 15
@@ -99,51 +78,43 @@ function Porg() {
   })
   return (
       <>
-        <mesh ref={plane} scale={[adaptedWidth + viewport.width - 9, adaptedHeight + 0.5, 1]}>
+        <mesh ref={plane} scale={[adaptedWidth + 1, adaptedHeight + 0.5, 1]}>
           <planeBufferGeometry attach="geometry" args={[1, 1]} />
           <meshBasicMaterial attach="material" map={texture} />
         </mesh>
         <group ref={eyes}>
-          <Thing scale={[scale / 2, scale / 2, scale / 2]} position={[adaptedWidth / 8.5, adaptedHeight / 10.3, 1]} amount={10} opacity={0.1} />
-          <Thing scale={[scale / 2, scale / 2, scale / 2]} position={[adaptedWidth / 2.1, adaptedHeight / 10.1, 1]} amount={10} opacity={0.1} />
+          <Thing scale={[scale / 2.5, scale / 2.5, scale / 2.5]} position={[adaptedWidth / 15.2, adaptedHeight / 10.5, 1]} amount={10} opacity={0.1} />
+          <Thing scale={[scale / 2.5, scale / 2.5, scale / 2.5]} position={[adaptedWidth / 3.9, adaptedHeight / 10.1, 1]} amount={10} opacity={0.1} />
         </group>
         <Thing ref={thing} scale={[scale * 3, scale * 3, scale * 3]} position={[-adaptedWidth / 5, adaptedHeight / 10, 0]} amount={30} opacity={1} />
       </>
   )
 }
 
+
 export default () => {
+
   return (
-    <Container>
-      <div style={{ position: "relative", width: '100%', height: 800 }}>
-        <Canvas>
-          <Suspense fallback={null}>
-            <Porg />
-            <Effects />
-          </Suspense>
-        </Canvas>
-      </div>
-      <OpacityOverlay />
-      <HeroContainer>
-        <StyledHeader/>
-        <TwoColumn>
-          <LeftColumn>
-            <Notification>Доставка по всему Казахстану.</Notification>
+      <Container>
+        <OpacityOverlay>
+          <Canvas>
+            <Suspense fallback={null}>
+              <Yoda />
+              <Effects />
+            </Suspense>
+          </Canvas>
+        </OpacityOverlay>
+        <HeroContainer>
+          <StyledHeader/>
+          <Content>
             <Heading>
-              <span>Качественные голограммы</span>
+              Голографические вентеляторы с доставкой
               <br />
-              <SlantedBackground>Покупка и аренда 3D голографических вентиляторов.</SlantedBackground>
+              по всему Казахстану
             </Heading>
-            <PrimaryAction>Заказать голограмму вашего товара</PrimaryAction>
-          </LeftColumn>
-          <RightColumn>
-            <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
-              background="transparent"
-            />
-          </RightColumn>
-        </TwoColumn>
-      </HeroContainer>
-    </Container>
+            <PrimaryAction>Посмотреть ассортимент</PrimaryAction>
+          </Content>
+        </HeroContainer>
+      </Container>
   );
 };

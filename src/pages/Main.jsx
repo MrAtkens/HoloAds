@@ -1,28 +1,40 @@
-import React from "react";
-import tw from "twin.macro";
+import React, {useEffect, useState} from "react";
+import {useTransform, useViewportScroll} from "framer-motion";
 import ScrollToTop from 'react-scroll-up';
+import tw from "twin.macro";
 
-import { AnimationRevealPage } from "helpers/AnimationRevealPage.js";
-import Features from "components/features/ThreeColSimple.js";
-import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
-import DownloadApp from "components/cta/DownloadApp.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
-import { ContentLoader } from 'components/ContentLoader'
-import Hero from "components/hero/BackgroundAsImage.js";
-import SEO from "components/Seo"
-
-import chefIconImageSrc from "images/chef-icon.svg";
+import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import celebrationIconImageSrc from "images/celebration-icon.svg";
+import chefIconImageSrc from "images/chef-icon.svg";
 import shopIconImageSrc from "images/shop-icon.svg";
-import FAQ from "components/faqs/SingleCol";
+
+import MainAdvantages from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
+import Testimonial from "components/testimonials/ThreeColumnWithProfileImage";
+import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2";
+import { AnimationRevealPage } from "helpers/AnimationRevealPage";
+import Footer from "components/footers/FiveColumnWithInputForm";
+import Features from "components/features/ThreeColSimple";
 import Blog from "components/blogs/GridWithFeaturedPost";
+import { ContentLoader } from 'components/ContentLoader'
+import Hero from "components/hero/BackgroundAsImage";
+import DownloadApp from "components/cta/DownloadApp";
+import FAQ from "components/faqs/SingleCol";
+import SEO from "components/Seo";
+
 
 const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
 const imageCss = tw`rounded-4xl`;
 
 export default () => {
 
+    const [color, setColor] = useState("#6415ff")
+    const { scrollYProgress  } = useViewportScroll();
+    const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+        ["#6415ff", "#7616e4", "#9418b7",
+            "#b71a84", "#de1c4b", "#fd1d1d",
+            "#fd3523", "#fd4728", "#fd602f",
+            "#fd8038", "#fcb045"]);
+    useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
 
     return (
         <>
@@ -63,7 +75,9 @@ export default () => {
                     ]}
                     imageContainerCss={tw`p-2!`}
                     imageCss={tw`w-20! h-20!`}
+                    color={color}
                 />
+                <Blog/>
                 <MainFeature2
                     statistics={[
                         {
@@ -88,10 +102,17 @@ export default () => {
                     imageDecoratorBlob={true}
                     imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
                     textOnLeft={true}
+                    color={color}
                 />
-                <Blog/>
+                <MainAdvantages
+                    imageSrc={prototypeIllustrationImageSrc}
+                    showDecoratorBlob={false}
+                    textOnLeft={false}
+                    color={color}
+                />
                 <FAQ
                     description="Здесь вы можете прочитать самые частые запросы"
+                    color={color}
                     faqs={[
                         {
                             question: "Насколько качественно выглядит голограмма?",
@@ -125,7 +146,8 @@ export default () => {
                 />
                 <DownloadApp
                     subheading={"Скачать"}
-                    text={<>Для управление вашеми голограммами у нас есть специальное мобильное приложение<HighlightedTextInverse style={{marginLeft: 20}}>Holo ads.</HighlightedTextInverse></>}
+                    text={<>Для управление вашеми голограммами у нас есть специальное мобильное приложение
+                        <HighlightedTextInverse style={{marginLeft: 20, color: color}}>Holo ads.</HighlightedTextInverse></>}
                 />
                 <Footer />
             </AnimationRevealPage>

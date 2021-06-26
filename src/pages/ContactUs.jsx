@@ -16,7 +16,10 @@ export default () => {
     const [color, setColor] = useState("#6415ff")
     const { scrollYProgress  } = useViewportScroll();
     const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-        ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
+        ["#6415ff", "#7616e4", "#9418b7",
+            "#b71a84", "#de1c4b", "#fd1d1d",
+            "#fd3523", "#fd4728", "#fd602f",
+            "#fd8038", "#fcb045"]);
     useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
       return (
           <>

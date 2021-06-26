@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
@@ -9,7 +9,6 @@ import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomizeIconImage from "images/customize-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
-import {useTransform, useViewportScroll} from "framer-motion";
 
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
@@ -78,13 +77,9 @@ export default ({
                     subheading = "",
                     description = "",
                     imageContainerCss = null,
-                    imageCss = null
+                    imageCss = null,
+                    color
                 }) => {
-    const [color, setColor] = useState("#6415ff")
-    const { scrollYProgress  } = useViewportScroll();
-    const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-        ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
-    useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
     return (
         <Container>
             <ContentWithPaddingXl>

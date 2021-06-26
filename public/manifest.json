@@ -1,11 +1,12 @@
 {
-  "short_name": "NурТас-НС",
-  "name": "NурТас-НС щебень в городе Нур-Султан",
+  "short_name": "HoloAds",
+  "name": "Голограммы в Нур-Султане",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any maskable"
     },
     {
       "src": "android-chrome-192x192.png",
