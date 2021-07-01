@@ -4,20 +4,22 @@ import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 
 const Main = lazy(() => import('pages/Main'));
-const About = lazy(() => import('pages/AboutUs'));
+const Shop = lazy(() => import('pages/Shop'));
 const ContactUs = lazy(() => import('pages/ContactUs'));
+
+
 
 export default function App() {
 
   return (
-      <Suspense fallback={<></>}>
+      <Suspense fallback={<div className="loader"/>}>
           <Router>
               <Switch>
                   <Route exact path="/">
                       <Main />
                   </Route>
-                  <Route path="/about">
-                      <About />
+                  <Route path="/shop">
+                      <Shop />
                   </Route>
                   <Route path="/contacts">
                       <ContactUs />

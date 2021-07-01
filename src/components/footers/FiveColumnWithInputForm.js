@@ -27,7 +27,7 @@ const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
-const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
+const CopyrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 const SocialLink = styled.a`
@@ -56,20 +56,6 @@ export default () => {
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Магазин</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
-            <ColumnHeading>О нас</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">Кто мы?</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Наши цели</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Партнёрство</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -114,7 +100,7 @@ export default () => {
             <LogoImg src={LogoImage} />
             <LogoText>Holo Ads.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Holo Ads. Все права сохранены.</CopywrightNotice>
+          <CopyrightNotice >&copy; 2018 Holo Ads. Все права сохранены.</CopyrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <InstagramIcon />

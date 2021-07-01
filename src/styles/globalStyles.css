@@ -1,5 +1,6 @@
 /* Below animations are fore modal created using React-Modal */
 
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -40,4 +41,51 @@
 .progress-icon {
     width: 60px;
     height: 60px;
+}
+
+.loader {
+    color: black;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 1em 0 currentcolor, inset 0 0 1em 0 currentcolor;
+    -webkit-animation: 1s loader linear infinite;
+    animation: 1s loader linear infinite;
+}
+.loader:before, .loader:after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    border-radius: 50%;
+}
+.loader:before {
+    border-top: 0.2em solid currentcolor;
+    border-right: 0.2em solid transparent;
+    top: 0.28em;
+    right: calc(50% - .22em);
+}
+.loader:after {
+    border-bottom: 0.2em solid currentcolor;
+    border-left: 0.2em solid transparent;
+    bottom: 0.28em;
+    left: calc(50% - .22em);
+}
+
+@-webkit-keyframes loader {
+    0% {
+        transform: rotateX(-60deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(-60deg) rotateZ(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotateX(-60deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(-60deg) rotateZ(360deg);
+    }
 }
