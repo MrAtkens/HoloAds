@@ -72,6 +72,12 @@ export default () => {
                 <Link href="#">Голограммы 60см</Link>
               </LinkListItem>
               <LinkListItem>
+                <Link href="#">Автономные голограммы</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Голографические стенды</Link>
+              </LinkListItem>
+              <LinkListItem>
                 <Link href="#">Прочее</Link>
               </LinkListItem>
             </LinkList>

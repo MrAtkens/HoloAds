@@ -31,13 +31,13 @@ const ScrollUpButtonWrapper = styled.div`
 export const ContentLoader = () => {
     const [isComplete, setIsComplete] = useState(false);
     const [color, setColor] = useState("#6415ff")
-    const { scrollYProgress } = useViewportScroll();
+    const {scrollYProgress} = useViewportScroll();
     const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
-    const yRangeColor = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    const yRangeColor = useTransform(scrollYProgress, [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
         ["#6415ff", "#7616e4", "#9418b7", "#b71a84", "#de1c4b", "#fd1d1d", "#fd3523", "#fd4728", "#fd602f", "#fd8038", "#fcb045"]);
-    const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
+    const pathLength = useSpring(yRange, {stiffness: 400, damping: 90});
 
-    useEffect(() =>{
+    useEffect(() => {
         yRange.onChange((v) => setIsComplete(v >= 1))
         yRangeColor.onChange((v) => setColor(v))
     }, [yRange, yRangeColor]);
@@ -65,7 +65,7 @@ export const ContentLoader = () => {
                     d="M14,26 L 22,33 L 35,16"
                     initial={false}
                     strokeDasharray="0 1"
-                    animate={{ pathLength: isComplete ? 1 : 0 }}
+                    animate={{pathLength: isComplete ? 1 : 0}}
                 />
             </svg>
         </ScrollUpButtonWrapper>

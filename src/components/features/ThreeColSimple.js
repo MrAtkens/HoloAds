@@ -84,7 +84,7 @@ export default ({
         <Container>
             <ContentWithPaddingXl>
                 {subheading && <Subheading>{subheading}</Subheading>}
-                <Heading>Кому могут понадобиться <HighlightedText style={{backgroundColor: color}}>Голограммы.</HighlightedText></Heading>
+                <Heading>Голограммы помогут <HighlightedText style={{backgroundColor: color}}>вам в</HighlightedText></Heading>
                 {description && <Description>{description}</Description>}
                 <ThreeColumnContainer>
                     {cards.map((card, i) => (

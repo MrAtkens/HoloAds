@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { Briefcase, DollarSign } from "react-feather";
+import { DollarSign, Eye, Smartphone, Star } from "react-feather";
 
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
@@ -33,7 +33,7 @@ const Heading = tw(
   SectionHeading
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 
-const Features = tw.div`mx-auto md:mx-0 flex flex-col lg:flex-row max-w-xs lg:max-w-none`;
+const Features = tw.div`mx-auto md:mx-0 flex flex-col max-w-xs lg:max-w-none`;
 const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col md:mr-8 last:mr-0`;
 
 const FeatureHeadingContainer = tw.div`flex items-center`;
@@ -69,16 +69,28 @@ export default ({
 
   const defaultFeatures = [
     {
-      Icon: Briefcase,
-      title: "Professionalism",
-      description: "We have the best professional marketing people across the globe just to work with you.",
+      Icon: Eye,
+      title: "Привлекает внимание",
+      description: "Объемный 3D контент увеличивает визуальный отклик на +70%",
       iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
     {
+      Icon: Star,
+      title: "Презентабельность",
+      description: "Голограмма смотрится стильно и солидно, несмотря на низкую цену",
+      iconContainerCss: tw`bg-yellow-300 text-yellow-800`
+    },
+    {
       Icon: DollarSign,
-      title: "Affordable",
-      description: "We promise to offer you the best rate we can - at par with the industry standard.",
-      iconContainerCss: tw`bg-red-300 text-red-800`
+      title: "Увеличение продаж",
+      description: "Многие клиенты уже отметили увеличение конверсии посетителей, после установки голографическая 3D рекламы",
+      iconContainerCss: tw`bg-green-300 text-green-800`
+    },
+    {
+      Icon: Smartphone,
+      title: "Приложение",
+      description: "С помощью приложения и программ вы сами, сможете загружать нужный контент",
+      iconContainerCss: tw`bg-blue-300 text-blue-800`
     }
   ];
 
@@ -97,7 +109,7 @@ export default ({
               <HighlightedText style={{color: color}}>Мы можем показать вам </HighlightedText>
             </Subheading>
             <Heading>
-              <>4 основных <span style={{color: color}}>преимущества.</span></>
+              <>Преимущества <span style={{color: color}}>3D рекламы</span></>
             </Heading>
             <Features>
               {features.map((feature, index) => (

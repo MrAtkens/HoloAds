@@ -53,7 +53,7 @@ export default ({
   imageInsideDiv = true,
   statistics = null,
   textOnLeft = false,
-  color
+  color = "#6415ff"
 }) => {
 
   const defaultStatistics = [
@@ -84,10 +84,10 @@ export default ({
           <TextContent>
             <Subheading>
               <SubheadingSpan style={{color: color}}>
-                A Reputed Brand
+                Маркетинг и реклама
               </SubheadingSpan>
             </Subheading>
-            <Heading>Почему <HighlightedText style={{backgroundColor: color}}>Мы ?</HighlightedText></Heading>
+            <Heading>Инновации в <HighlightedText style={{backgroundColor: color}}>рекламе</HighlightedText></Heading>
             <Description>{description}</Description>
             <Statistics>
               {statistics.map((statistic, index) => (

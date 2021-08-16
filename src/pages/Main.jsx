@@ -9,13 +9,13 @@ import chefIconImageSrc from "images/chef-icon.svg";
 import shopIconImageSrc from "images/shop-icon.svg";
 
 import MainAdvantages from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
-import Testimonial from "components/testimonials/ThreeColumnWithProfileImage";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2";
-import { AnimationRevealPage } from "helpers/AnimationRevealPage";
+import Pricing from "components/pricing/ThreePlansWithHalfPrimaryBackground"
+import {AnimationRevealPage} from "helpers/AnimationRevealPage";
 import Footer from "components/footers/FiveColumnWithInputForm";
 import Features from "components/features/ThreeColSimple";
-import Blog from "components/blogs/GridWithFeaturedPost";
-import { ContentLoader } from 'components/ContentLoader'
+import Blog from "components/gallery/GridWithFeaturedPost";
+import {ContentLoader} from 'components/ContentLoader'
 import Hero from "components/hero/BackgroundAsImage";
 import DownloadApp from "components/cta/DownloadApp";
 import FAQ from "components/faqs/SingleCol";
@@ -28,25 +28,25 @@ const imageCss = tw`rounded-4xl`;
 export default () => {
 
     const [color, setColor] = useState("#6415ff")
-    const { scrollYProgress  } = useViewportScroll();
-    const yRange = useTransform(scrollYProgress , [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    const {scrollYProgress} = useViewportScroll();
+    const yRange = useTransform(scrollYProgress, [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
         ["#6415ff", "#7616e4", "#9418b7",
             "#b71a84", "#de1c4b", "#fd1d1d",
-            "#fd3523", "#fd4728", "#fd602f",
-            "#fd8038", "#fcb045"]);
+            "#fd3523", "#dd6b20", "#ed8936",
+            "#f6ad55", "#ecc94b"]);
     useEffect(() => yRange.onChange((v) => setColor(v)), [yRange]);
 
     return (
         <>
             <SEO
-                title="Гланая страница"
-                description="Holo ads, магазин голограмм"
+                title="Купить качественные голографические вентиляторы в Нур-Султан | Holo-Ads"
+                description="Качественные и недорогие голограммы в Нур-Султан! Бесплатная доставка по Астане. 1 года гарантии от производителя. Звоните ☎ 8-(707)-722-75-89"
             />
             <ScrollToTop
                 showUnder={300}
                 duration={700}
                 easing="easeInOutCubic"
-                style={{ bottom: 30, right: 30, zIndex: 100 }}
+                style={{bottom: 30, right: 30, zIndex: 100}}
             >
                 <ContentLoader/>
             </ScrollToTop>
@@ -56,20 +56,20 @@ export default () => {
                     cards={[
                         {
                             imageSrc: shopIconImageSrc,
-                            title: "Любые магазины, киоски и лавочки",
-                            description: "Благодаря голограмма можно очень хорошо увеличить превликательность вашей торговой точки",
+                            title: "Бизнесе",
+                            description: "Привлекайте новых потенциальных клиентов за счет внедрения 3D рекламы",
                             url: "https://google.com"
                         },
                         {
                             imageSrc: chefIconImageSrc,
-                            title: "Маркетинг и реклама",
-                            description: "Вы можете установить голограмму на любую поверхность с вашем логотипом",
+                            title: "Рекламе",
+                            description: "3D голограмма – эффективный способ привлечь внимание обширной аудитории к продукту",
                             url: "https://timerse.com"
                         },
                         {
                             imageSrc: celebrationIconImageSrc,
-                            title: "События и мероприятие",
-                            description: "Вау эффект от голограмм и тех предстовлений которые вы можете сделать будет обязательно",
+                            title: "EVENT’ах",
+                            description: "3D реклама сделает ваше событие запоминающимся, о нем будут говорить",
                             url: "https://reddit.com"
                         }
                     ]}
@@ -94,9 +94,9 @@ export default () => {
                         }
                     ]}
                     primaryButtonText="Заказать сейчас"
+                    description="Внедрение уникальной технологии 3D голограммы для продвижения своих товаров и услуг — позволяет создавать настоящие шедевры из обычных рекламных роликов"
                     primaryButtonUrl="https://order.now.com"
                     imageInsideDiv={false}
-                    imageSrc="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNzI2fQ&auto=format&fit=crop&w=768&q=80"
                     imageCss={Object.assign(tw`bg-cover`, imageCss)}
                     imageContainerCss={tw`md:w-1/2 h-auto`}
                     imageDecoratorBlob={true}
@@ -110,6 +110,7 @@ export default () => {
                     textOnLeft={false}
                     color={color}
                 />
+                <Pricing color={color}/>
                 <FAQ
                     description="Здесь вы можете прочитать самые частые запросы"
                     color={color}
@@ -141,15 +142,13 @@ export default () => {
                         }
                     ]}
                 />
-                <Testimonial
-                    subheading=""
-                />
                 <DownloadApp
                     subheading={"Скачать"}
                     text={<>Для управление вашеми голограммами у нас есть специальное мобильное приложение
-                        <HighlightedTextInverse style={{marginLeft: 20, color: color}}>Holo ads.</HighlightedTextInverse></>}
+                        <HighlightedTextInverse style={{marginLeft: 20, color: color}}>Holo
+                            ads.</HighlightedTextInverse></>}
                 />
-                <Footer />
+                <Footer/>
             </AnimationRevealPage>
         </>
     );

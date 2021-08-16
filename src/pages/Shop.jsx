@@ -1,18 +1,21 @@
 import React from "react";
 import {AnimationRevealPage} from "helpers/AnimationRevealPage.js";
-import tw from "twin.macro";
 
 import Header from "components/headers/light";
 import Footer from "components/footers/FiveColumnWithInputForm";
 import ProductGrid from "components/cards/TabCardGrid"
+import SEO from "../components/Seo";
 
-const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
-  return (
-    <AnimationRevealPage>
-      <Header />
-        <ProductGrid />
-      <Footer />
-    </AnimationRevealPage>
-  );
+    return (
+        <AnimationRevealPage>
+            <SEO
+                title="Магазин голографических вентиляторов Holo-Ads"
+                description="Качественные и недорогие голограммы в Нур-Султан! Бесплатная доставка по Астане. 1 года гарантии от производителя. Звоните ☎ 8-(707)-722-75-89"
+            />
+            <Header/>
+            <ProductGrid/>
+            <Footer/>
+        </AnimationRevealPage>
+    );
 };
