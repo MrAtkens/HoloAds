@@ -100,7 +100,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
+          <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} alt="Статистика, Преимущества Holo-Ads" />
           {showDecoratorBlob && <DecoratorBlob />}
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>

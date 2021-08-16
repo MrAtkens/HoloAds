@@ -13,7 +13,7 @@ const SixColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center
 
 const Column = tw.div`px-4 sm:px-0 sm:w-1/4 md:w-auto mt-12`;
 
-const ColumnHeading = tw.h5`uppercase font-bold`;
+const ColumnHeading = tw.h4`uppercase font-bold`;
 
 const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
@@ -25,7 +25,7 @@ const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-betwee
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
-const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
+const LogoText = tw.h4`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
 const CopyrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
@@ -108,13 +108,13 @@ export default () => {
           </LogoContainer>
           <CopyrightNotice >&copy; 2018 Holo Ads. Все права сохранены.</CopyrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://facebook.com" name="Holo-Ads Instagram">
               <InstagramIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink href="https://twitter.com" name="Holo-Ads WhatsApp">
               <WhatsAppIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink href="https://youtube.com" name="Holo-Ads Youtube">
               <FacebookIcon />
             </SocialLink>
           </SocialLinksContainer>

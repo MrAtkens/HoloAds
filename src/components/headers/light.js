@@ -80,7 +80,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} >
         <LogoLink to="/">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="Holo-Ads логотип" />
           HoloAds
         </LogoLink>
       </motion.div>

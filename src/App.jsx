@@ -1,5 +1,6 @@
 import React, {lazy, Suspense} from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {YMInitializer} from "react-yandex-metrika";
 import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 
@@ -28,6 +29,7 @@ export default function App() {
                     </Route>
                 </Switch>
             </Router>
+            <YMInitializer accounts={[84071428]} options={{webvisor: true}} version="2" />
         </Suspense>
     );
 }

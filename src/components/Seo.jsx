@@ -2,8 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 
 
-const Seo = ({description, lang, keywords, title,}) => {
-    const metaDescription = description
+const Seo = ({description, lang, keywords, title, metaDescription}) => {
 
     return (
         <Helmet
@@ -15,7 +14,7 @@ const Seo = ({description, lang, keywords, title,}) => {
             meta={[
                 {
                     name: `description`,
-                    content: metaDescription,
+                    content: description,
                 },
                 {
                     property: `og:title`,
