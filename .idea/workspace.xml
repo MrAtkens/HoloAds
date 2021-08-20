@@ -12,19 +12,91 @@
   <component name="ChangeListManager">
     <list default="true" id="7653c574-222b-4341-afbe-237ced319ac0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/1.c80ffe90.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/1.c80ffe90.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/6.4818c0bb.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/6.4818c0bb.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/8.d316db83.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/8.d316db83.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.3390bf6d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.3390bf6d.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/background.3f04f9d5.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/logo.f1c48d0f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_redirects" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/android-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/android-icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/android-icon-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/apple-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ms-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ms-icon-70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/5.179662a7.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/5.179662a7.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.b70f188f.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.b70f188f.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/0.90bf1f76.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/0.90bf1f76.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.6672cc24.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.6672cc24.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/10.3e2a9bc2.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/10.3e2a9bc2.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.6e953dc7.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.6e953dc7.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.6e953dc7.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/5.d5e16b92.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/5.d5e16b92.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/5.d5e16b92.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/6.dd73864a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/6.dd73864a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/7.920bd2e6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/7.920bd2e6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.aaa67b24.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.aaa67b24.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/9.aacab26f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/9.aacab26f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.c3a46ba9.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.c3a46ba9.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.170ddb59.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.170ddb59.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/app-mockup.3cdce84c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/arrow-right-icon.c4ea6a92.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/background.66aed0b9.webm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/celebration-icon.0d9bb963.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/chef-icon.866e076b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/customize-icon.367468c9.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/dot-pattern.ee6f4f0e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/facebook-icon.8f6512c4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/gallery1.f37f15fc.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/header.03a9b03a.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/instagram.7d973914.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/logo.42bd7a6c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/prototype-illustration.21bc4b3f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/shield-icon.daefe14b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/shop-icon.048628c9.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/stats-illustration.89e20edc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/support-icon.f9253ffa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/svg-decorator-blob-3.de3cee31.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/svg-decorator-blob-5.3175ec40.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/svg-decorator-blob-7.04fa60c9.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/svg-decorator-blob-8.46d53f6b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/svg-decorator-blob-9.8e136b6b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/team-illustration-2.76aa0427.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/whatsapp-glyph-black.55a514cb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Seo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Seo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cards/TabCardGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/TabCardGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cards/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footers/FiveColumnWithInputForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footers/FiveColumnWithInputForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery/GridWithFeaturedPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/GridWithFeaturedPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/headers/light.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/headers/light.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hero/BackgroundAsImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hero/BackgroundAsImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/misc/Headings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/misc/Headings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ContactUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContactUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Shop.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +135,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\WEB\Holograms\src\components\pricing" />
-      <recent name="G:\WEB\Holograms\public" />
-      <recent name="G:\WEB\Holograms\src\images" />
-      <recent name="G:\WEB\Holograms\src\components\cards" />
-      <recent name="G:\WEB\Holograms\my-app\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\WEB\Holograms\src\images" />
       <recent name="G:\WEB\Holograms\src\components\hero" />
@@ -77,8 +142,15 @@
       <recent name="G:\WEB\Holograms\my-app\public\static" />
       <recent name="G:\WEB\Holograms\my-app" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\WEB\Holograms\src\components\pricing" />
+      <recent name="G:\WEB\Holograms\public" />
+      <recent name="G:\WEB\Holograms\src\images" />
+      <recent name="G:\WEB\Holograms\src\components\cards" />
+      <recent name="G:\WEB\Holograms\my-app\public" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -136,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.dev" />
@@ -218,7 +290,12 @@
       <workItem from="1628698635643" duration="203000" />
       <workItem from="1628706915747" duration="904000" />
       <workItem from="1628747775552" duration="1340000" />
-      <workItem from="1629106052861" duration="14575000" />
+      <workItem from="1629106052861" duration="17589000" />
+      <workItem from="1629182866504" duration="8431000" />
+      <workItem from="1629230454482" duration="595000" />
+      <workItem from="1629271567614" duration="40000" />
+      <workItem from="1629402055897" duration="1272000" />
+      <workItem from="1629482699550" duration="4879000" />
     </task>
     <task id="LOCAL-00001" summary="Advantages added and About page pre delete commit">
       <created>1624740949643</created>
@@ -248,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629139214665</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Pre Final deploy">
+      <created>1629140107060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629140107060</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +357,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Pre Final deploy" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="241" key="#Inspections" timestamp="1629186290937">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="586" y="241" key="#Inspections/0.46.1920.1034@0.46.1920.1034" timestamp="1629186290937" />
     <state x="715" y="362" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625519689631">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
@@ -285,22 +373,22 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="739" y="317" key="FileChooserDialogImpl/0.46.1920.1034@0.46.1920.1034" timestamp="1628751644289" />
-    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1629139347745">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1629484372560">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1629139347745" />
-    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1629139347745">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1629484372560" />
+    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1629484372560">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1629139347745" />
-    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1629139347745">
+    <state width="1899" height="276" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1629484372560" />
+    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1629484372560">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1629139347745" />
-    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1629139347745">
+    <state width="1899" height="276" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1629484372560" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1629484372560">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1629139347745" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1629484372560" />
     <state width="1897" height="344" key="GridCell.Tab.1.bottom" timestamp="1623960800582">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
@@ -349,14 +437,18 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state width="1897" height="344" key="GridCell.Tab.3.right/0.46.1920.1034@0.46.1920.1034" timestamp="1623960800583" />
+    <state x="817" y="265" key="RollbackChangesDialog" timestamp="1629183513816">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="817" y="265" key="RollbackChangesDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1629183513816" />
     <state x="460" y="207" key="SettingsEditor" timestamp="1625411700113">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="460" y="207" key="SettingsEditor/0.46.1920.1034@0.46.1920.1034" timestamp="1625411700113" />
-    <state x="551" y="293" key="Vcs.Push.Dialog.v2" timestamp="1629139225995">
+    <state x="551" y="293" key="Vcs.Push.Dialog.v2" timestamp="1629140109111">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="551" y="293" key="Vcs.Push.Dialog.v2/0.46.1920.1034@0.46.1920.1034" timestamp="1629139225995" />
+    <state x="551" y="293" key="Vcs.Push.Dialog.v2/0.46.1920.1034@0.46.1920.1034" timestamp="1629140109111" />
     <state x="616" y="262" key="run.anything.popup" timestamp="1626770672577">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>

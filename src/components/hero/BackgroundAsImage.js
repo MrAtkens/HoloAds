@@ -29,7 +29,7 @@ const ContainerMobile = styled.div`
 
 
 const OpacityOverlay = tw.div`z-10 absolute`;
-const OpacityOverlayImage = tw.div`z-10 absolute inset-0 bg-black opacity-50`;
+const OpacityOverlayImage = tw.div`z-10 absolute inset-0 opacity-50`;
 
 const Video = tw.video`max-w-none`;
 

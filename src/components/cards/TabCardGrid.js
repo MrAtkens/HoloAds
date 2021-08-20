@@ -1,16 +1,25 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import { useLocation } from "react-router-dom";
+
+import {VolumeX, Volume2, Wifi, Bluetooth, RefreshCcw} from "react-feather"
+import {css} from "styled-components/macro"; //eslint-disable-line
+import styled from "styled-components";
 import {motion} from "framer-motion";
 import tw from "twin.macro";
-import styled from "styled-components";
-import {css} from "styled-components/macro"; //eslint-disable-line
+
 import {Container, ContentWithPaddingXl} from "components/misc/Layouts.js";
 import {SectionHeading} from "components/misc/Headings.js";
-import {VolumeX, Volume2, Wifi, Bluetooth, RefreshCcw} from "react-feather"
+
+
 import {PrimaryButton as PrimaryButtonBase} from "components/misc/Buttons.js";
 import {ReactComponent as SvgDecoratorBlob1} from "images/svg-decorator-blob-5.svg";
 import {ReactComponent as SvgDecoratorBlob2} from "images/svg-decorator-blob-7.svg";
 
-import {data} from './products'
+import {data} from './products';
+
+function useQuery() {
+    return new URLSearchParams(useLocation().search);
+}
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -63,7 +72,17 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 `;
 
 export default ({heading = "Товары"}) => {
+    let query = useQuery();
     const [activeTab, setActiveTab] = useState(data[0].name);
+
+    useEffect(() => {
+        const category = query.get("category")
+        data.map(branch => {
+            if(branch.category === category)
+                setActiveTab(branch.name)
+        })
+    },[])
+
     console.log(data)
     return (
         <Container>
@@ -164,22 +183,27 @@ export default ({heading = "Товары"}) => {
                                         <CardTitle>{card.title}</CardTitle>
                                         <CardContent>
                                             <CardLine>
-                                                <CardDescription>Разрешение </CardDescription> <CardDescriptionParameter>{card.resolution}px</CardDescriptionParameter>
+                                                <CardDescription>Разрешение </CardDescription>
+                                                <CardDescriptionParameter>{card.resolution}px</CardDescriptionParameter>
                                             </CardLine>
                                             <CardLine>
-                                                <CardDescription>Яркость </CardDescription> <CardDescriptionParameter>{card.brightness}</CardDescriptionParameter>
+                                                <CardDescription>Яркость </CardDescription>
+                                                <CardDescriptionParameter>{card.brightness}</CardDescriptionParameter>
                                             </CardLine>
                                             <CardLine>
-                                                <CardDescription>LED качество </CardDescription> <CardDescriptionParameter>{card.ledQuality}</CardDescriptionParameter>
+                                                <CardDescription>LED качество </CardDescription>
+                                                <CardDescriptionParameter>{card.ledQuality}</CardDescriptionParameter>
                                             </CardLine>
                                             <CardLine>
-                                                <CardDescription>Диаметр </CardDescription> <CardDescriptionParameter>{card.diameter}</CardDescriptionParameter>
+                                                <CardDescription>Диаметр </CardDescription>
+                                                <CardDescriptionParameter>{card.diameter}</CardDescriptionParameter>
                                             </CardLine>
                                             <CardLine>
                                                 <CardDescription>Память </CardDescription><CardDescriptionParameter>{card.memory}</CardDescriptionParameter>
                                             </CardLine>
                                             <CardLine>
-                                                <CardDescription>Поддерживаемые форматы</CardDescription><CardDescriptionParameter>{card.extensions}</CardDescriptionParameter>
+                                                <CardDescription>Поддерживаемые
+                                                    форматы</CardDescription><CardDescriptionParameter>{card.extensions}</CardDescriptionParameter>
                                             </CardLine>
                                         </CardContent>
                                         <CardPrice>{card.price}</CardPrice>

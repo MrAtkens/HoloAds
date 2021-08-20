@@ -1,6 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+import { Link } from 'react-scroll'
 
 import LogoImage from "images/logo.svg";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
@@ -17,8 +18,10 @@ const ColumnHeading = tw.h4`uppercase font-bold`;
 
 const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
-const Link = tw.a`border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`;
-
+const DefaultLink = tw.a`border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`
+const LinkAnchor = styled(Link)`
+${tw`border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`}
+`
 const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
@@ -30,7 +33,7 @@ const LogoText = tw.h4`ml-2 text-xl font-black tracking-wider text-gray-800`;
 const CopyrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
-const SocialLink = styled.a`
+const SocialLink = styled.div`
   ${tw`cursor-pointer p-3 rounded-full bg-gray-900 text-gray-100 hover:bg-gray-700 transition duration-300 mr-4 last:mr-0`}
   svg {
     ${tw`w-8 h-8`}
@@ -46,16 +49,16 @@ export default () => {
             <ColumnHeading>Главная</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Видео</Link>
+                <LinkAnchor to="gallery" spy={true} smooth={true} offset={50}>Галерея</LinkAnchor>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">FAQs</Link>
+                <LinkAnchor to="price" spy={true} smooth={true} offset={50}>Цены</LinkAnchor>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Рекомендаций</Link>
+                <LinkAnchor to="faq">FAQs</LinkAnchor>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Магазин</Link>
+                <LinkAnchor to="download">Рекомендаций</LinkAnchor>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -63,22 +66,22 @@ export default () => {
             <ColumnHeading>Магазин</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Голограммы 40см</Link>
+                <DefaultLink href="/shop?category=g40">Голограммы 40см</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Голограммы 50см</Link>
+                <DefaultLink href="/shop?category=g50">Голограммы 50см</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Голограммы 60см</Link>
+                <DefaultLink href="/shop?category=g60">Голограммы 60см</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Автономные голограммы</Link>
+                <DefaultLink href="/shop?category=b32">Автономные голограммы</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Голографические стенды</Link>
+                <DefaultLink href="/shop?category=gsa">Голографические стенды</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Прочее</Link>
+                <DefaultLink href="/shop?category=other">Прочее</DefaultLink>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -86,16 +89,16 @@ export default () => {
             <ColumnHeading>Контакты</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Телефон: +7-707-722-75-89</Link>
+                <DefaultLink href="/contacts">Телефон: +7-707-722-75-89</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Почта: r.kaliaskar@mail.ru</Link>
+                <DefaultLink href="/contacts">Почта: r.kaliaskar@mail.ru</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Адресс: Сакен Сейфулинна 40</Link>
+                <DefaultLink href="/contacts">Адресс: Сакен Сейфулинна 40</DefaultLink>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Связаться с нами</Link>
+                <DefaultLink href="/contacts">Связаться с нами</DefaultLink>
               </LinkListItem>
             </LinkList>
           </Column>

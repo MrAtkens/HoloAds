@@ -11,7 +11,7 @@ import { ReactComponent as SvgDotPatternIcon } from "images/dot-pattern.svg";
 import gallery from "images/gallery1.webp";
 
 const HeadingContainer = tw.div`text-center`;
-const Subheading = tw(SubheadingBase)`mb-4`;
+const Subheading = tw(SubheadingBase)`text-base`;
 const Heading = tw(SectionHeading)``;
 const Description = tw(SectionDescription)`mx-auto`;
 
